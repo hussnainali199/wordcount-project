@@ -1,0 +1,18 @@
+<h1>There are {{count}} words in this Textarea</h1>
+
+<a href="{%url 'home' %}"> Start A NEw  Text </a>
+
+<h1>Your Text is </h1>
+
+{{fulltext}}
+
+<h1>Word Counted:</h1>
+
+{% for word, counttoal in sortedwords %}
+
+{{  word }} -- {{ counttoal }}
+<br />
+
+
+
+{% endfor %}
